@@ -9,15 +9,15 @@ class Inputs extends React.Component {
     render(){
         return (
             <div>
-               <p>Hide
+                <p><span>Hide</span>
                   <input type = 'checkbox'
                          checked = {this.state.visible}
                          onChange = {this.changeVisibility}/>
                          {' '}
-                         Not available
-                         <input type = 'checkbox'
-                                checked = {this.state.enable}
-                                onChange = {this.changeAccessibility}/>
+                  <span>Not available</span>
+                  <input type = 'checkbox'
+                         checked = {this.state.enable}
+                         onChange = {this.changeAccessibility}/>
                 </p>
                 <p>Name:
                     {!this.state.visible && <input type = 'text'
